@@ -1,0 +1,241 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+   font-family: DM Sans, sans-serif;
+   line-height: 1.5;
+   font-weight: 400;
+
+   color-scheme: light dark;
+   color: #fffcf2;
+   background-color: #1c1e21;
+
+   font-synthesis: none;
+   text-rendering: optimizeLegibility;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+}
+
+@keyframes wave {
+   0% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+   }
+
+   10% {
+      -webkit-transform: rotate(20deg);
+      transform: rotate(20deg);
+   }
+
+   20% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+   }
+
+   30% {
+      -webkit-transform: rotate(20deg);
+      transform: rotate(20deg);
+   }
+
+   40% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+   }
+
+   50% {
+      -webkit-transform: rotate(20deg);
+      transform: rotate(20deg);
+   }
+
+   60% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+   }
+
+   100% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+   }
+}
+
+.waving-hand {
+   display: inline-block;
+   animation: wave 1.5s infinite;
+}
+
+@keyframes bounce {
+   0%,
+   20%,
+   50%,
+   80%,
+   100% {
+      transform: translateY(0);
+   }
+   40% {
+      transform: translateY(-5px);
+   }
+   60% {
+      transform: translateY(-3px);
+   }
+}
+
+// .emoji-cursor {
+//    cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>📧</text></svg>")
+//          16 0,
+//       auto;
+//    animation: bounce 1s infinite;
+// }
+
+@keyframes rotate360 {
+   from {
+      transform: rotate(0deg);
+   }
+   to {
+      transform: rotate(360deg);
+   }
+}
+
+.rotate-infinite {
+   animation: rotate360 infinite 20s linear;
+}
+
+$font-sizes: (
+   'mobile-small': 0.85rem,
+   'mobile-medium': 0.9rem,
+   'mobile-large': 0.9rem,
+   'tablet-portrait': 0.95rem,
+   'tablet-landscape': 1rem,
+   'desktop-small': 1rem,
+   'desktop-medium': 1.125rem,
+   'desktop-large': 1.25rem,
+);
+
+.font-size {
+   font-size: map-get($font-sizes, 'mobile-small');
+
+   @media (min-width: 375px) {
+      font-size: map-get($font-sizes, 'mobile-medium');
+   }
+
+   @media (min-width: 425px) {
+      font-size: map-get($font-sizes, 'mobile-large');
+   }
+
+   @media (min-width: 634px) {
+      font-size: map-get($font-sizes, 'tablet-portrait');
+   }
+
+   @media (min-width: 768px) {
+      font-size: map-get($font-sizes, 'tablet-landscape');
+   }
+
+   @media (min-width: 1024px) {
+      font-size: map-get($font-sizes, 'desktop-small');
+   }
+
+   @media (min-width: 1440px) {
+      font-size: map-get($font-sizes, 'desktop-medium');
+   }
+
+   @media (min-width: 2560px) {
+      font-size: map-get($font-sizes, 'desktop-large');
+   }
+}
+
+$font-sizes-two: (
+   'mobile-small': 0.85rem,
+   'mobile-medium': 0.9rem,
+   'mobile-large': 0.9rem,
+   'tablet-portrait': 0.95rem,
+   'tablet-landscape': 1rem,
+   'desktop-small': 1.2rem,
+   'desktop-medium': 1.4rem,
+   'desktop-large': 1.5rem,
+);
+
+.font-size-two {
+   font-size: map-get($font-sizes-two, 'mobile-small');
+
+   @media (min-width: 375px) {
+      font-size: map-get($font-sizes-two, 'mobile-medium');
+   }
+
+   @media (min-width: 425px) {
+      font-size: map-get($font-sizes-two, 'mobile-large');
+   }
+
+   @media (min-width: 634px) {
+      font-size: map-get($font-sizes-two, 'tablet-portrait');
+   }
+
+   @media (min-width: 768px) {
+      font-size: map-get($font-sizes-two, 'tablet-landscape');
+   }
+
+   @media (min-width: 1024px) {
+      font-size: map-get($font-sizes-two, 'desktop-small');
+   }
+
+   @media (min-width: 1440px) {
+      font-size: map-get($font-sizes-two, 'desktop-medium');
+   }
+
+   @media (min-width: 2560px) {
+      font-size: map-get($font-sizes-two, 'desktop-large');
+   }
+}
+
+.image-container img {
+   transition: transform 2s ease-in-out;
+   max-width: 100%;
+   max-height: 100%;
+   display: block;
+}
+
+.image-container:hover img {
+   transform: scale(1.1);
+}
+
+$font-banner: (
+   'mobile-small': 3rem,
+   'mobile-medium': 3rem,
+   'mobile-large': 3.5rem,
+   'tablet-portrait': 4rem,
+   'tablet-landscape': 5rem,
+   'desktop-small': 6rem,
+   'desktop-medium': 8rem,
+   'desktop-large': 12rem,
+);
+
+.font-banner {
+   font-size: map-get($font-banner, 'mobile-small');
+
+   @media (min-width: 375px) {
+      font-size: map-get($font-banner, 'mobile-medium');
+   }
+
+   @media (min-width: 425px) {
+      font-size: map-get($font-banner, 'mobile-large');
+   }
+
+   @media (min-width: 634px) {
+      font-size: map-get($font-banner, 'tablet-portrait');
+   }
+
+   @media (min-width: 768px) {
+      font-size: map-get($font-banner, 'tablet-landscape');
+   }
+
+   @media (min-width: 1024px) {
+      font-size: map-get($font-banner, 'desktop-small');
+   }
+
+   @media (min-width: 1440px) {
+      font-size: map-get($font-banner, 'desktop-medium');
+   }
+
+   @media (min-width: 2560px) {
+      font-size: map-get($font-banner, 'desktop-large');
+   }
+}
