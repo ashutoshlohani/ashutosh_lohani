@@ -10,10 +10,12 @@ export const opacity = {
 
 export const slideUp = {
    initial: {
-      top: 0,
+      // top: 0,
+      opacity: 1,
    },
    exit: {
-      top: '-100vh',
-      transition: { duration: 0.5, ease: [0.75, 0, 0.25, 1], delay: 0.2 },
+      // top: '-100vh',
+      // transition: { duration: 0.5 },
+      opacity: 0,
    },
 };

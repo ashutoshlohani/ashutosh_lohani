@@ -61,7 +61,7 @@ function Footer() {
                         {socialLink('https://github.com/ashutoshlohani', 'GitHub', github)}
                      </MagneticButton>
                      <MagneticButton>
-                        {socialLink('https://dribbble.com/oaashussadsdsa', 'Dribbble', dribbble)}
+                        {socialLink('https://dribbble.com/oaashu', 'Dribbble', dribbble)}
                      </MagneticButton>
                   </div>
                   <p className='hidden sm:block font-size opacity-50'>social</p>

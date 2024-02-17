@@ -3,12 +3,14 @@ import Button from '../components/button/Button';
 
 function Contact() {
    const downloadPDF = () => {
-      const PDFUrl = '/ashutosh_lohani.pdf';
+      const PDFUrl = 'ashutosh_lohani.pdf';
       const link = document.createElement('a');
       link.href = PDFUrl;
       link.target = '_blank';
-      // link.download = 'ashutosh_lohani.pdf';
+      link.download = 'ashutosh_lohani.pdf';
+      document.body.appendChild(link);
       link.click();
+      document.body.removeChild(link);
    };
 
    return (
@@ -33,9 +35,7 @@ function Contact() {
          <div className='pt-16'>
             <hr className='hidden sm:block' />
             <p className='text-center sm:text-left text-[1rem] sm:text-[4.4rem] lg:text-[6rem] xl:text-[8rem] break-words sm:leading-none overflow-hidden py-4 sm:pt-[4rem] border sm:border-none rounded-full sm:rounded-none hover:scale-95 sm:hover:scale-100'>
-               <a
-                  href='mailto:aashutosh.lohaani@gmail.com'
-                  className='sm:uppercase hover:underline'>
+               <a href='mailto:ashulohani97@outlook.com' className='sm:uppercase hover:underline'>
                   ashulohani97@
                   <br className='hidden sm:block' />
                   outlook.com

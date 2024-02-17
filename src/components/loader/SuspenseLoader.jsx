@@ -13,7 +13,7 @@ export default function SuspenseLoader() {
             } else {
                setIndex(index + 1);
             }
-         }, 150);
+         }, 125);
 
          return () => clearTimeout(timeoutId);
       }, [index]);
