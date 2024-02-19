@@ -1,7 +1,6 @@
 import { AnimatePresence } from 'framer-motion';
 import { lazy, useEffect, useState } from 'react';
 import Loader from './components/loader/Loader';
-import SuspenseLoader from './components/loader/SuspenseLoader';
 
 const Hero = lazy(() => import('./pages/Hero'));
 const About = lazy(() => import('./pages/About'));
@@ -23,7 +22,6 @@ function App() {
    return (
       <>
          <AnimatePresence mode='wait'>{isLoading && <Loader />}</AnimatePresence>
-         {/* <AnimatePresence mode='wait'>{isLoading && <SuspenseLoader />}</AnimatePresence> */}
          <main>
             <Hero />
             <About />

@@ -57,7 +57,7 @@ function ServiceTools() {
          </div> */}
 
          <p className='text-[1.5rem] lg:text-[2rem] xl:text-[2.5rem] leading- font-light  mb-16'>
-            <img src={down} alt='down' className='my-2 h-6' />
+            <img src={down} alt='down' width={24} height={24} className='my-2 h-6' />
             {`How can I help you : )`}
          </p>
 
@@ -113,7 +113,7 @@ function ServiceTools() {
          </div>
 
          <div className='mt-[2rem] xl:mt-[8rem] xl:pb-[8rem]'>
-            <img src={down} alt='down' className='my-2 h-6' />
+            <img src={down} alt='down' width={24} height={24} className='my-2 h-6' />
             <p className='text-[1.5rem] lg:text-[2rem] xl:text-[2.5rem] font-light leading-tight'>
                My go to tech stack to
                <br />

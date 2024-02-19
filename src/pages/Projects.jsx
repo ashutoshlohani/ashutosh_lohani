@@ -23,7 +23,7 @@ const projects = [
       sourceCode: '',
    },
    {
-      projectName: 'InnerScore',
+      projectName: 'Aiko Planet',
       description:
          'An online shopping platform developed using MERN stack (React, Node.js, MongoDB). Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
       technology: ['React', 'Node.js', 'MongoDB'],
@@ -45,7 +45,7 @@ const projects = [
       sourceCode: '',
    },
    {
-      projectName: 'Dev Labs',
+      projectName: 'Dona Clone',
       description:
          'A task management tool with features like adding tasks, marking them as completed, deleting tasks. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
       technology: ['Vue.js', 'Firebase', 'CSS'],

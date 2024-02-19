@@ -50,7 +50,7 @@ const HeroText = React.memo(() => {
    return (
       <>
          <div className='leading-none sm:leading-[5rem] flex flex-col items-start sm:items-start text-dark cursor-default'>
-            <div className='font-semibold md:font-medium lg:font-light text-[4rem] md:text-[4rem] lg:text-[5rem] xl:text-[6.9rem] '>
+            <div className='font-semibold md:font-medium lg:font-light text-[64px] lg:text-[80px] xl:text-[110px] '>
                {['F', 'r', 'o', 'n', 't', 'e', 'n', 'd', '\u00A0'].map((char, index) => (
                   <span key={index}>{char}</span>
                ))}

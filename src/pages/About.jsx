@@ -29,9 +29,9 @@ const About = () => (
                   loading='lazy'
                   src={'https://i.ibb.co/kyGpmks/profile-Picture.webp'}
                   alt='Ashutosh Lohani'
-                  className='object-cover rounded-md max-h-full brightness-90'
-                  width={'500px'}
-                  height={'500px'}
+                  className='object-cover rounded-md max-h-full min-w-full brightness-90'
+                  width={'auto'}
+                  height={'auto'}
                />
             </div>
          </div>
