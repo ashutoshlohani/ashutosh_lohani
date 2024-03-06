@@ -5,7 +5,7 @@ import down from '../assets/icons/down.svg';
 import tune from '../assets/icons/seo.svg';
 import website from '../assets/icons/website.svg';
 import figma from '../assets/techIcons/figma.svg';
-import firebase from '../assets/techIcons/firebase.svg';
+import typeScript from '../assets/techIcons/typescript.svg';
 import git from '../assets/techIcons/git-icon.svg';
 import javascript from '../assets/techIcons/javascript.svg';
 import next from '../assets/techIcons/nextjs-icon.svg';
@@ -28,14 +28,14 @@ const techStackImagesOne = [
    { name: 'Javascript', image: javascript },
    { name: 'React', image: react },
    { name: 'Next JS', image: next },
+   { name: 'TypeScript', image: typeScript },
    { name: 'Three JS', image: three },
-   { name: 'Tailwind CSS', image: tailwind },
 ];
 
 const techStackImagesTwo = [
    { name: 'SASS', image: sass },
    { name: 'Redux', image: redux },
-   { name: 'Firebase', image: firebase },
+   { name: 'Tailwind CSS', image: tailwind },
    { name: 'Git', image: git },
    { name: 'Figma', image: figma },
 ];

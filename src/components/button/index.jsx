@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { useRef } from 'react';
-import { useMagnetic } from '../hooks/use-magnetic';
+import { useMagnetic } from '../../lib/hooks/use-magnetic';
 
 // eslint-disable-next-line react/prop-types
 export function MagneticButton({ children }) {

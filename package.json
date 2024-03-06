@@ -12,13 +12,16 @@
       "preview": "vite preview"
    },
    "dependencies": {
+      "clsx": "^2.1.0",
       "framer-motion": "^11.0.3",
       "react": "^18.2.0",
       "react-dom": "^18.2.0",
+      "tailwind-merge": "^2.2.1",
       "use-scramble": "^2.2.15",
       "vite-plugin-compression2": "^0.12.0"
    },
    "devDependencies": {
+      "@tailwindcss/aspect-ratio": "^0.4.2",
       "@types/react": "^18.2.43",
       "@types/react-dom": "^18.2.17",
       "@vitejs/plugin-react-swc": "^3.5.0",

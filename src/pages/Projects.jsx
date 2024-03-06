@@ -12,55 +12,79 @@ import { MagneticButton } from '../components/button';
 
 const projects = [
    {
-      projectName: 'Bhuli',
+      projectName: 'Aiko Store',
       description:
-         'A real-time chat application built with React and Socket.io with java and everything. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-      technology: ['React', 'Socket.io', 'CSS'],
-      image: 'https://picsum.photos/500',
+         'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+      technology: ['Next js', 'Shopify CMS', 'Tailwind'],
+      image: 'https://i.ibb.co/cN618hJ/Frame-1.png',
       role: 'Frontend Developer',
       duration: '1 months',
-      liveLink: '',
+      liveLink: 'https://aikoplanet.com/',
       sourceCode: '',
    },
    {
-      projectName: 'Aiko Planet',
+      projectName: 'Tee Rific',
       description:
-         'An online shopping platform developed using MERN stack (React, Node.js, MongoDB). Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-      technology: ['React', 'Node.js', 'MongoDB'],
-      image: 'https://picsum.photos/501',
-      role: 'Backend Developer',
-      duration: '2 months',
-      liveLink: '',
+         'This T-Shirt Customizer developed with ThreeJS, it harnesses the capabilities of a powerful 3D graphics library to render and animate intricate 3D models. React Three Fiber enriches the environment by seamlessly integrating ThreeJS within React. TailwindCSS empowers the project with a streamlined and responsive design framework, while Framer Motion enhances the user experience through captivating animations. This application facilitates loading, creation and customization of visually appealing 3D models, complete with dynamic lighting and precise camera positioning. The capability to introduce custom colors and file formats adds a personalized touch to the experience.',
+      technology: ['Three', 'React Three Fiber', 'Framer Motion'],
+      image: 'https://i.ibb.co/D5xvzCd/canvas-1.png',
+      role: 'Frontend Developer',
+      duration: '2 weeks',
+      liveLink: 'https://ashutoshlohani.github.io/Tee-rific/',
+      sourceCode: 'https://github.com/ashutoshlohani/Tee-rific',
+   },
+
+   {
+      projectName: 'Dona',
+      description: `This project is an exciting replication of dona.ai, a straightforward to-do list boasting a clean UI and exceptional user experience. I have always been drawn to their design, prompting me to embark on recreating it using Typescript and React, powered by Vite as the build tool. To enhance the user interface, I incorporated react-beautiful-dnd for draggable lists and utilized react-router-dom for seamless navigation. For robust state management, I employed redux saga and toolkit, while tailwindcss was chosen to add a touch of style.`,
+      technology: ['React + Vite', 'TypeScript', 'Redux', 'Tailwind'],
+      image: 'https://i.ibb.co/gv06KhC/Screenshot-2024-02-26-151105.png',
+      role: 'Frontend Developer',
+      duration: '3 weeks',
+      liveLink: 'https://ashutoshlohani.github.io/donaAI/',
+      sourceCode: 'https://github.com/ashutoshlohani/donaAI',
+   },
+
+   {
+      projectName: 'InnerScore',
+      description:
+         "Led the development of the InnerScore website, a platform that enables teachers and students to share resources and collaborate. I was responsible for developing the website's user interface (UI), integrated it with the Backend data management system, and achieved responsive design for tablet, and mobile views using SCSS. Utilized React as the framework, integrated routing, forms data, REST APIs, and Email JS with SMTP for automated email notifications and designed Figma mail templates. Achieved a 60% website performance improvement, better SEO, and Lighthouse Score.",
+      technology: ['React', 'SCSS', 'REST-APIs'],
+      image: 'https://i.ibb.co/WBKt3PB/Pixel-True-Mockup.png',
+      role: 'Frontend Developer',
+      duration: '1 month',
+      liveLink: 'https://innerscore.ai/',
       sourceCode: '',
    },
+
    {
-      projectName: 'AlmaBetter',
-      description:
-         'A weather application that fetches current weather information using a weather API. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-      technology: ['HTML', 'CSS', 'JavaScript'],
-      image: 'https://picsum.photos/502',
-      role: 'React Developer',
-      duration: '3 months',
-      liveLink: '',
-      sourceCode: '',
+      projectName: 'Airpods clone',
+      description: `This project is inspired by Apple's AirPods Pro landing page. Created using vanilla JavaScript and CSS, this project comes to life with dynamic animations powered by GSAP and Lottie.`,
+      technology: ['GSAP', 'Lottie', 'JavaScript', 'CSS'],
+      image: 'https://i.ibb.co/rZpyh6n/Apple-announces-Air-Pods-Pro-with-noise-cancellation-coming-October-30th.jpg',
+      role: 'Frontend Developer',
+      duration: '4 days',
+      liveLink: 'https://ashutoshlohani.github.io/apple-airpod-clone-react/',
+      sourceCode: 'https://github.com/ashutoshlohani/apple-airpod-clone-react',
    },
+
    {
-      projectName: 'Dona Clone',
+      projectName: 'Digitally',
       description:
-         'A task management tool with features like adding tasks, marking them as completed, deleting tasks. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-      technology: ['Vue.js', 'Firebase', 'CSS'],
-      image: 'https://picsum.photos/503',
-      role: 'Vue Developer',
-      duration: '4 months',
-      liveLink: '',
-      sourceCode: '',
+         "In Digitally project I seamlessly integrated React, Framer Motion, and Tailwind CSS to craft an immersive and visually stunning experience. Leveraging the power of React components, the website ensures responsiveness across diverse devices. Framer Motion introduces captivating transition animations, elevating user interaction to new heights. Tailwind CSS provides a clean and modern design aesthetic, while relatable content and strategic storytelling connect with the audience on a personal level. With its modern design and relatable content, this project exemplifies the fusion of creativity and functionality in the digital marketing realm, showcasing the agency's expertise in navigating the ever-evolving landscape of online brand presence.",
+      technology: ['React', 'Framer Motion', 'Tailwind'],
+      image: 'https://i.ibb.co/N2QR5rc/original-bed852a221c64e0efbbec747ed2e60f6.png',
+      role: 'Frontend Developer',
+      duration: '1 Week',
+      liveLink: 'https://ashutoshlohani.github.io/digitally/',
+      sourceCode: 'https://github.com/ashutoshlohani/digitally',
    },
 ];
 
 function projectLinks(project) {
    return (
       <div className='flex text-base sm:text-lg font-normal py-8 gap-8'>
-         {!project.liveLink && (
+         {project.liveLink && (
             <MagneticButton>
                <a href={project.liveLink} target='_blank' rel='noreferrer'>
                   <div className='flex items-center gap-2 font-size'>
@@ -70,7 +94,7 @@ function projectLinks(project) {
                </a>
             </MagneticButton>
          )}
-         {!project.sourceCode && (
+         {project.sourceCode && (
             <MagneticButton>
                <a href={project.sourceCode} target='_blank' rel='noreferrer'>
                   <div className='flex items-center gap-2 font-size'>
@@ -79,6 +103,9 @@ function projectLinks(project) {
                   </div>
                </a>
             </MagneticButton>
+         )}
+         {!project.sourceCode && (
+            <div className='flex items-center gap-2 font-size'>Client Project</div>
          )}
       </div>
    );
@@ -146,7 +173,7 @@ function Projects() {
                      <div key={index} className='w-full sm:w-1/2 hover:scale-[1.01] transition-all'>
                         <div
                            onClick={() => openModal(index)}
-                           className=' cursor-pointer h-fit rounded text-light bg-cover bg-center bg-no-repeat my-4 sm:my-4 mx-0 sm:mx-4 '
+                           className=' cursor-pointer h-fit rounded text-light bg-light bg-cover bg-center bg-no-repeat my-4 sm:my-4 mx-0 sm:mx-4 '
                            style={{ backgroundImage: `url(${project.image})` }}>
                            <div className='bg-black bg-opacity-65 transition-all hover:bg-opacity-70 rounded flex flex-col justify-between'>
                               <div className='flex flex-col justify-center items-center py-[4rem] xl:py-[8rem]'></div>
@@ -155,11 +182,11 @@ function Projects() {
                                  <p className='text-[2.5rem] lg:text-[3rem] font-normal my-4'>
                                     {project.projectName}
                                  </p>
-                                 <p className='line-clamp-2 font-size font-light mb-4 opacity-90 w-[90%]'>
+                                 <p className='line-clamp-2 font-size font-light mb-4 opacity-80 w-[65%]'>
                                     {project.description}
                                  </p>
 
-                                 <div className='flex flex-wrap gap-2 my-4 opacity-90 text-[0.6rem] sm:text-[0.9rem]'>
+                                 <div className='flex flex-wrap gap-2 my-4 opacity-80 text-[0.6rem] sm:text-[0.9rem]'>
                                     {project.technology.map((tech, techIndex) => (
                                        <div
                                           key={techIndex}
@@ -181,14 +208,14 @@ function Projects() {
             <div className='fixed inset-0 flex items-center justify-center'>
                <div className='absolute inset-0 bg-black opacity-50' onClick={closeModal}></div>
 
-               <div className='overflow-y-auto md:overflow-hidden flex flex-col md:flex-row z-50 bg-dark text-light w-[100vw] h-[100vh] shadow-xl'>
+               <div className='overflow-y-auto md:overflow-hidden flex flex-col md:flex-row z-50 bg-light text-dark w-[100vw] h-[100vh] shadow-xl'>
                   <button
                      className='absolute text-xl cursor-pointer rounded-full bg-accent-secondary hover:bg-accent-primary p-3 top-8 right-8'
                      onClick={closeModal}>
                      <img src={close} />
                   </button>
                   <div className='flex flex-col md:flex-row'>
-                     <div className='image-container overflow-hidden flex basis-2/5 justify-center items-center w-full bg-black'>
+                     <div className='overflow-hidden flex basis-2/5 justify-center items-center w-full bg-light'>
                         <img
                            src={projects[selectedProjectIndex].image}
                            alt='Cover Picture'

@@ -17,7 +17,7 @@ const HeroText = React.memo(() => {
    });
 
    useEffect(() => {
-      spansRef.current = document.querySelectorAll('span');
+      spansRef.current = document.querySelectorAll('#var, #var1, #var2, #var3, #var4, #var5');
    }, []);
 
    const handleMouseMove = e => {
@@ -49,33 +49,50 @@ const HeroText = React.memo(() => {
 
    return (
       <>
-         <div className='leading-none sm:leading-[5rem] flex flex-col items-start sm:items-start text-dark cursor-default'>
+         <div className='leading-none sm:leading-[5rem] flex flex-col items-start sm:items-start text-light cursor-default'>
             <div className='font-semibold md:font-medium lg:font-light text-[64px] lg:text-[80px] xl:text-[110px] '>
                {['F', 'r', 'o', 'n', 't', 'e', 'n', 'd', '\u00A0'].map((char, index) => (
-                  <span key={index}>{char}</span>
+                  <span id='var' key={index}>
+                     {char}
+                  </span>
                ))}
 
                <br className='sm:hidden' />
 
                {['D', 'e', 'v', 'e', 'l', 'o', 'p', 'e', 'r'].map((char, index) => (
-                  <span key={index + 10}>{char}</span>
+                  <span id='var1' key={index + 10}>
+                     {char}
+                  </span>
                ))}
             </div>
 
             <h1 className='font-light md:font-medium lg:font-light text-[2.5rem] md:text-[4rem] lg:text-[5rem] xl:text-[6.9rem] text-left sm:text-left'>
                <p className='leading-snug'>
                   {['T', 'u', 'r', 'n', 'i', 'n', 'g', '\u00A0'].map((char, index) => (
-                     <span key={index}>{char}</span>
+                     <span id='var2' key={index}>
+                        {char}
+                     </span>
                   ))}
-                  <span ref={ref} onMouseOver={replay} onFocus={replay} className='leading-snug' />
+                  <span
+                     id='var3'
+                     ref={ref}
+                     onMouseOver={replay}
+                     onFocus={replay}
+                     className='leading-snug'
+                  />
                </p>
 
                <p>
-                  {['I', 'n', 't', 'o', '\u00A0', 'B', 'e', 'a', 'u', 't', 'y', '.'].map(
+                  {['I', 'n', 't', 'o', '\u00A0', 'B', 'e', 'a', 'u', 't', 'y'].map(
                      (char, index) => (
-                        <span key={index}>{char}</span>
+                        <span id='var4' key={index}>
+                           {char}
+                        </span>
                      )
                   )}
+                  <span id='var5' className='text-accent-primary'>
+                     {'.'}
+                  </span>
                </p>
             </h1>
          </div>

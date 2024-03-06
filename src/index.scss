@@ -17,6 +17,25 @@
    -moz-osx-font-smoothing: grayscale;
 }
 
+::-moz-selection {
+   color: #000000;
+   background: #a3d55d;
+}
+
+::selection {
+   color: #000000;
+   background: #a3d55d;
+}
+
+html {
+   overflow: scroll;
+   overflow-x: hidden;
+}
+::-webkit-scrollbar {
+   width: 0; /* Remove scrollbar space */
+   background: transparent; /* Optional: just make scrollbar invisible */
+}
+
 @keyframes wave {
    0% {
       -webkit-transform: rotate(0deg);

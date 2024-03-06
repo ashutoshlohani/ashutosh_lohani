@@ -49,10 +49,10 @@ function Navbar() {
                         Code by
                      </h5>
                      <h5 className='ps-1 transition-transform duration-500 ease-in-expo group-hover:-translate-x-[4.2rem]'>
-                        Ashutosh
+                        Ashu
                      </h5>
-                     <h5 className='absolute left-48 ps-1 transition-transform duration-500 ease-in-expo group-hover:-translate-x-28'>
-                        Lohani
+                     <h5 className='absolute left-40 ps-0 transition-transform duration-500 ease-in-expo group-hover:-translate-x-28'>
+                        tosh
                      </h5>
                   </div>
                </div>
@@ -61,7 +61,9 @@ function Navbar() {
                   <div className='flex gap-12'>
                      {navLinks.map(link => (
                         <MagneticButton key={link.href}>
-                           <a href={link.href} className='font-normal hover:font-medium'>
+                           <a
+                              href={link.href}
+                              className='font-normal hover:font-medium hover:overline decoration-wavy underline-offset-8 decoration-1 decoration-accent-primary'>
                               {link.text}
                            </a>
                         </MagneticButton>
