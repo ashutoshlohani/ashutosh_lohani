@@ -1,3 +1,5 @@
+import profilePicture from '/profilePicture.webp';
+
 const About = () => {
    return (
       <section className='bg-dark text-light gap-10'>
@@ -28,7 +30,7 @@ const About = () => {
                <div className='flex justify-center mb-10 sm:mb-0 sm:p-8 lg:p-0 h-[15rem] sm:h-[100%] w-full sm:w-[100%] lg:w-[75%] xl:w-[65%]'>
                   <img
                      loading='lazy'
-                     src={'https://i.ibb.co/kyGpmks/profile-Picture.webp'}
+                     src={profilePicture}
                      alt='Ashutosh Lohani'
                      className='object-cover rounded-md max-h-full min-w-full brightness-90'
                      width={'auto'}

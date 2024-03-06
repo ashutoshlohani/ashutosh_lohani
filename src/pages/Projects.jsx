@@ -4,10 +4,13 @@ import left from '../assets/icons/left.svg';
 import liveCode from '../assets/icons/live-code.svg';
 import liveWebsite from '../assets/icons/live-website.svg';
 import right from '../assets/icons/right.svg';
-// import project1 from '../assets/project1.png';
-// import project2 from '../assets/project2.png';
-// import project3 from '../assets/project3.png';
-// import project4 from '../assets/project4.png';
+import aiko from '/aiko.webp';
+import airpods from '/airpods.webp';
+import digitally from '/digitally.webp';
+import dona from '/dona.webp';
+import innerscore from '/innerscore.webp';
+import teerific from '/teerific.webp';
+
 import { MagneticButton } from '../components/button';
 
 const projects = [
@@ -15,8 +18,8 @@ const projects = [
       projectName: 'Aiko Store',
       description:
          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-      technology: ['Next js', 'Shopify CMS', 'Tailwind'],
-      image: 'https://i.ibb.co/cN618hJ/Frame-1.png',
+      technology: ['Next.js', 'React', 'Shopify CMS', 'Tailwind'],
+      image: aiko,
       role: 'Frontend Developer',
       duration: '1 months',
       liveLink: 'https://aikoplanet.com/',
@@ -27,7 +30,7 @@ const projects = [
       description:
          'This T-Shirt Customizer developed with ThreeJS, it harnesses the capabilities of a powerful 3D graphics library to render and animate intricate 3D models. React Three Fiber enriches the environment by seamlessly integrating ThreeJS within React. TailwindCSS empowers the project with a streamlined and responsive design framework, while Framer Motion enhances the user experience through captivating animations. This application facilitates loading, creation and customization of visually appealing 3D models, complete with dynamic lighting and precise camera positioning. The capability to introduce custom colors and file formats adds a personalized touch to the experience.',
       technology: ['Three', 'React Three Fiber', 'Framer Motion'],
-      image: 'https://i.ibb.co/D5xvzCd/canvas-1.png',
+      image: teerific,
       role: 'Frontend Developer',
       duration: '2 weeks',
       liveLink: 'https://ashutoshlohani.github.io/Tee-rific/',
@@ -38,7 +41,7 @@ const projects = [
       projectName: 'Dona',
       description: `This project is an exciting replication of dona.ai, a straightforward to-do list boasting a clean UI and exceptional user experience. I have always been drawn to their design, prompting me to embark on recreating it using Typescript and React, powered by Vite as the build tool. To enhance the user interface, I incorporated react-beautiful-dnd for draggable lists and utilized react-router-dom for seamless navigation. For robust state management, I employed redux saga and toolkit, while tailwindcss was chosen to add a touch of style.`,
       technology: ['React + Vite', 'TypeScript', 'Redux', 'Tailwind'],
-      image: 'https://i.ibb.co/gv06KhC/Screenshot-2024-02-26-151105.png',
+      image: dona,
       role: 'Frontend Developer',
       duration: '3 weeks',
       liveLink: 'https://ashutoshlohani.github.io/donaAI/',
@@ -49,8 +52,8 @@ const projects = [
       projectName: 'InnerScore',
       description:
          "Led the development of the InnerScore website, a platform that enables teachers and students to share resources and collaborate. I was responsible for developing the website's user interface (UI), integrated it with the Backend data management system, and achieved responsive design for tablet, and mobile views using SCSS. Utilized React as the framework, integrated routing, forms data, REST APIs, and Email JS with SMTP for automated email notifications and designed Figma mail templates. Achieved a 60% website performance improvement, better SEO, and Lighthouse Score.",
-      technology: ['React', 'SCSS', 'REST-APIs'],
-      image: 'https://i.ibb.co/WBKt3PB/Pixel-True-Mockup.png',
+      technology: ['React', 'React Router', 'SCSS', 'REST-APIs'],
+      image: innerscore,
       role: 'Frontend Developer',
       duration: '1 month',
       liveLink: 'https://innerscore.ai/',
@@ -61,7 +64,7 @@ const projects = [
       projectName: 'Airpods clone',
       description: `This project is inspired by Apple's AirPods Pro landing page. Created using vanilla JavaScript and CSS, this project comes to life with dynamic animations powered by GSAP and Lottie.`,
       technology: ['GSAP', 'Lottie', 'JavaScript', 'CSS'],
-      image: 'https://i.ibb.co/rZpyh6n/Apple-announces-Air-Pods-Pro-with-noise-cancellation-coming-October-30th.jpg',
+      image: airpods,
       role: 'Frontend Developer',
       duration: '4 days',
       liveLink: 'https://ashutoshlohani.github.io/apple-airpod-clone-react/',
@@ -73,7 +76,7 @@ const projects = [
       description:
          "In Digitally project I seamlessly integrated React, Framer Motion, and Tailwind CSS to craft an immersive and visually stunning experience. Leveraging the power of React components, the website ensures responsiveness across diverse devices. Framer Motion introduces captivating transition animations, elevating user interaction to new heights. Tailwind CSS provides a clean and modern design aesthetic, while relatable content and strategic storytelling connect with the audience on a personal level. With its modern design and relatable content, this project exemplifies the fusion of creativity and functionality in the digital marketing realm, showcasing the agency's expertise in navigating the ever-evolving landscape of online brand presence.",
       technology: ['React', 'Framer Motion', 'Tailwind'],
-      image: 'https://i.ibb.co/N2QR5rc/original-bed852a221c64e0efbbec747ed2e60f6.png',
+      image: digitally,
       role: 'Frontend Developer',
       duration: '1 Week',
       liveLink: 'https://ashutoshlohani.github.io/digitally/',
