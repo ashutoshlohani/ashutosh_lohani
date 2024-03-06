@@ -4,6 +4,7 @@ import left from '../assets/icons/left.svg';
 import liveCode from '../assets/icons/live-code.svg';
 import liveWebsite from '../assets/icons/live-website.svg';
 import right from '../assets/icons/right.svg';
+import { MagneticButton } from '../components/button';
 import aiko from '/aiko.webp';
 import airpods from '/airpods.webp';
 import digitally from '/digitally.webp';
@@ -11,13 +12,11 @@ import dona from '/dona.webp';
 import innerscore from '/innerscore.webp';
 import teerific from '/teerific.webp';
 
-import { MagneticButton } from '../components/button';
-
 const projects = [
    {
       projectName: 'Aiko Store',
       description:
-         'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+         "Aiko Planet is an online destination for pet enthusiasts in Cape Town, Africa. This project, spearheaded by our team, revolves around creating an intuitive and efficient website and e-commerce solution dedicated to offering premium dog food products to the discerning pet owners of the region. I was responsible for developing the website's user interface, integrating it with the backend data system, and achieving responsive design for tablet and mobile views using SCSS. I utilized Next JS as the framework, integrated routing, and handled forms data.",
       technology: ['Next.js', 'React', 'Shopify CMS', 'Tailwind'],
       image: aiko,
       role: 'Frontend Developer',
@@ -236,21 +235,21 @@ function Projects() {
 
                               <div className='py-2'>
                                  <p className='font-size font-semibold pb-1'>Role</p>
-                                 <p className='font-size leading-relaxed font-light opacity-70'>
+                                 <p className='font-size leading-relaxed font-normal opacity-90'>
                                     {projects[selectedProjectIndex].role}
                                  </p>
                               </div>
 
                               <div className='py-2'>
                                  <p className='font-size font-semibold pb-1'>Duration</p>
-                                 <p className='font-size leading-relaxed font-light opacity-70'>
+                                 <p className='font-size leading-relaxed font-normal opacity-90'>
                                     {projects[selectedProjectIndex].duration}
                                  </p>
                               </div>
 
                               <div className='py-2'>
                                  <p className='font-size font-semibold pb-1'>Description</p>
-                                 <p className='font-size leading-relaxed font-light opacity-70'>
+                                 <p className='font-size leading-relaxed font-normal opacity-90'>
                                     {projects[selectedProjectIndex].description}
                                  </p>
                               </div>
