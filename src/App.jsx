@@ -1,6 +1,5 @@
 import { AnimatePresence } from 'framer-motion';
 import { lazy, useEffect, useState } from 'react';
-import { ParallaxProvider } from 'react-scroll-parallax';
 import Loader from './components/loader/Loader';
 
 const Hero = lazy(() => import('./pages/Hero'));
@@ -23,16 +22,14 @@ function App() {
    return (
       <>
          <AnimatePresence mode='wait'>{isLoading && <Loader />}</AnimatePresence>
-         <ParallaxProvider>
-            <main>
-               <Hero />
-               <About />
-               <ServiceTools />
-               <Projects />
-               <Contact />
-               <Footer />
-            </main>
-         </ParallaxProvider>
+         <main>
+            <Hero />
+            <About />
+            <ServiceTools />
+            <Projects />
+            <Contact />
+            <Footer />
+         </main>
       </>
    );
 }
