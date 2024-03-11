@@ -36,7 +36,7 @@ function Navbar() {
    ];
 
    return (
-      <header>
+      <>
          <nav className='mx-6 sm:mx-14 lg:mx-28 '>
             <div className='flex flex-wrap items-center justify-between font-normal font-size pt-8'>
                <div className='group flex cursor-pointer items-center'>
@@ -70,13 +70,18 @@ function Navbar() {
                      ))}
                   </div>
                </div>
-
                <div className='md:hidden'>
-                  <a href='/contact'>Chat</a>
+                  <MagneticButton>
+                     <a
+                        href='/contact'
+                        className='font-normal hover:font-medium hover:overline decoration-wavy underline-offset-8 decoration-1 decoration-accent-primary'>
+                        Chat
+                     </a>
+                  </MagneticButton>
                </div>
             </div>
          </nav>
-      </header>
+      </>
    );
 }
 
