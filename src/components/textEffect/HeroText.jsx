@@ -1,5 +1,56 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useCallback, useEffect, useRef } from 'react';
 import { useScramble } from 'use-scramble';
+
+const heroWordsCSS = `
+@keyframes cycle {
+  0%   { opacity: 1; }
+  14%  { opacity: 1; }
+  19%  { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+.hero-word-wrap {
+  position: relative;
+  display: inline-block;
+  min-width: 8ch;
+}
+
+.hero-words-strut {
+  display: inline;
+  user-select: none;
+  pointer-events: none;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.hero-words {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1.2em;
+}
+
+.hero-words span {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  white-space: nowrap;
+  line-height: inherit;
+}
+
+.hero-words span:nth-child(1) { animation: cycle 7s linear infinite 0s; }
+.hero-words span:nth-child(2) { animation: cycle 7s linear infinite 1s; }
+.hero-words span:nth-child(3) { animation: cycle 7s linear infinite 2s; }
+.hero-words span:nth-child(4) { animation: cycle 7s linear infinite 3s; }
+.hero-words span:nth-child(5) { animation: cycle 7s linear infinite 4s; }
+.hero-words span:nth-child(6) { animation: cycle 7s linear infinite 5s; }
+.hero-words span:nth-child(7) { animation: cycle 7s linear infinite 6s; }
+`;
+
+const ROTATING_WORDS = ['Beauty.', 'Magic.', 'Reality.', 'Stories.', 'Dreams.', 'Motion.', 'Impact.'];
 
 const HeroText = React.memo(() => {
    const spansRef = useRef([]);
@@ -17,10 +68,10 @@ const HeroText = React.memo(() => {
    });
 
    useEffect(() => {
-      spansRef.current = document.querySelectorAll('#var, #var1, #var2, #var3, #var4, #var5');
+      spansRef.current = Array.from(document.querySelectorAll('.var-fw'));
    }, []);
 
-   const handleMouseMove = e => {
+   const handleMouseMove = useCallback(e => {
       const mouseX = e.clientX;
       const mouseY = e.clientY;
 
@@ -30,70 +81,68 @@ const HeroText = React.memo(() => {
          const spanY = rect.y + rect.height / 2;
 
          const distance = Math.sqrt((mouseX - spanX) ** 2 + (mouseY - spanY) ** 2);
-
          const maxDistance = Math.min(window.innerWidth, window.innerHeight) / 2;
          const fontWeight =
             200 + (900 / maxDistance) * (maxDistance - Math.min(distance, PROXIMITY_THRESHOLD));
 
          span.style.fontWeight = fontWeight.toFixed(0);
       });
-   };
+   }, []);
 
    useEffect(() => {
       document.addEventListener('mousemove', handleMouseMove);
-
-      return () => {
-         document.removeEventListener('mousemove', handleMouseMove);
-      };
-   }, []);
+      return () => document.removeEventListener('mousemove', handleMouseMove);
+   }, [handleMouseMove]);
 
    return (
       <>
-         <div className='leading-none sm:leading-[5rem] flex flex-col items-start sm:items-start text-light cursor-default'>
-            <div className='font-semibold md:font-medium lg:font-light text-[64px] lg:text-[80px] xl:text-[110px] '>
+         <style>{heroWordsCSS}</style>
+         <div className='leading-none sm:leading-[5rem] flex flex-col items-start text-light cursor-default'>
+
+            {/* "Frontend Developer" */}
+            <div className='font-semibold md:font-medium lg:font-light text-[64px] lg:text-[80px] xl:text-[110px]'>
                {['F', 'r', 'o', 'n', 't', 'e', 'n', 'd', '\u00A0'].map((char, index) => (
-                  <span id='var' key={index}>
-                     {char}
-                  </span>
+                  <span className='var-fw' key={index}>{char}</span>
                ))}
-
                <br className='sm:hidden' />
-
                {['D', 'e', 'v', 'e', 'l', 'o', 'p', 'e', 'r'].map((char, index) => (
-                  <span id='var1' key={index + 10}>
-                     {char}
-                  </span>
+                  <span className='var-fw' key={index + 10}>{char}</span>
                ))}
             </div>
 
-            <h1 className='font-light md:font-medium lg:font-light text-[2.5rem] md:text-[4rem] lg:text-[5rem] xl:text-[6.9rem] text-left sm:text-left'>
-               <p className='leading-snug'>
+            {/* "Turning Binary / Into <word>" */}
+            <h1 className='font-light md:font-medium lg:font-light text-[2.5rem] md:text-[4rem] lg:text-[5rem] xl:text-[6.9rem] text-left'>
+
+               <span className='block leading-snug'>
                   {['T', 'u', 'r', 'n', 'i', 'n', 'g', '\u00A0'].map((char, index) => (
-                     <span id='var2' key={index}>
-                        {char}
-                     </span>
+                     <span className='var-fw' key={index}>{char}</span>
                   ))}
                   <span
-                     id='var3'
+                     className='var-fw leading-snug'
                      ref={ref}
                      onMouseOver={replay}
                      onFocus={replay}
-                     className='leading-snug'
                   />
-               </p>
+               </span>
 
-               <p>
-                  {['I', 'n', 't', 'o', '\u00A0', 'B', 'e', 'a', 'u', 't', 'y'].map(
-                     (char, index) => (
-                        <span id='var4' key={index}>
-                           {char}
-                        </span>
-                     )
-                  )}
-                  <span id='var5' className='text-accent-primary'>
-                     {'.'}
+
+               <span className='flex items-baseline'>
+                  {['I', 'n', 't', 'o', '\u00A0'].map((char, index) => (
+                     <span className='var-fw' key={index}>{char}</span>
+                  ))}
+                  <span className='hero-word-wrap'>
+                     {/* Invisible strut — gives this wrapper a real text baseline */}
+                     <span className='hero-words-strut' aria-hidden='true'>&#8203;</span>
+                     <span className='hero-words'>
+                        {ROTATING_WORDS.map((word, index) => (
+                           <span key={index} className='var-fw text-accent-secondary'>
+                              {word}
+                           </span>
+                        ))}
+                     </span>
                   </span>
-               </p>
+               </span>
+
             </h1>
          </div>
       </>

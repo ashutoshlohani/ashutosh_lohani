@@ -166,7 +166,7 @@ function Projects() {
                   <br></br>
                   “have” to explain it, it’s bad.
                </p>
-               <p className='text-[0.6rem] sm:text-[0.8rem] font-light'>-Cory House</p>
+               {/* <p className='text-[0.6rem] sm:text-[0.8rem] font-light'>-Cory House</p> */}
             </div>
 
             <div>

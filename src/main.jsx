@@ -1,13 +1,11 @@
-import React, { Suspense } from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App.jsx';
 import './index.scss';
-import SuspenseLoader from './components/loader/SuspenseLoader.jsx';
 
+// ✅ Removed Suspense wrapper — App handles its own loading
 ReactDOM.createRoot(document.getElementById('root')).render(
    <React.StrictMode>
-      <Suspense fallback={<SuspenseLoader />}>
-         <App />
-      </Suspense>
+      <App />
    </React.StrictMode>
 );

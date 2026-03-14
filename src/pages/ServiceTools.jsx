@@ -127,7 +127,7 @@ function ServiceTools() {
                            src={image}
                            alt={name}
                            loading='lazy'
-                           className='w-[2.5rem] h-[2.5rem] lg:w-[3rem] lg:h-[3rem] xl:w-[4rem] xl:h-[4rem] grayscale hover:grayscale-0'
+                           className='w-[2.5rem] h-[2.5rem] lg:w-[3rem] lg:h-[3rem] xl:w-[4rem] xl:h-[4rem] hover:grayscale-0'
                         />
                         <p className='hidden sm:block text-[0.6rem] xl:text-[0.8rem] mt-3 xl:mt-6 font-light opacity-60'>
                            {name}
@@ -143,7 +143,7 @@ function ServiceTools() {
                            src={image}
                            alt={name}
                            loading='lazy'
-                           className='w-[2.5rem] h-[2.5rem] lg:w-[3rem] lg:h-[3rem] xl:w-[4rem] xl:h-[4rem] grayscale hover:grayscale-0'
+                           className='w-[2.5rem] h-[2.5rem] lg:w-[3rem] lg:h-[3rem] xl:w-[4rem] xl:h-[4rem] hover:grayscale-100'
                         />
                         <p className='hidden sm:block text-[0.6rem] xl:text-[0.8rem] mt-3 xl:mt-5 font-light opacity-60'>
                            {name}

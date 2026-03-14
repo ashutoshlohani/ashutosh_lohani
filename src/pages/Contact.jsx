@@ -3,11 +3,11 @@ import Button from '../components/button/Button';
 
 function Contact() {
    const downloadPDF = () => {
-      const PDFUrl = 'ashutosh_lohani.pdf';
+      const PDFUrl = 'Ashutosh_Lohani_Frontend_Engineer_Resume.pdf';
       const link = document.createElement('a');
       link.href = PDFUrl;
       link.target = '_blank';
-      link.download = 'ashutosh_lohani.pdf';
+      link.download = 'Ashutosh_Lohani_Frontend_Engineer_Resume.pdf';
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);
@@ -35,10 +35,13 @@ function Contact() {
          <div className='pt-16'>
             <hr className='hidden sm:block' />
             <p className='text-center sm:text-left text-[1rem] sm:text-[4.4rem] lg:text-[6rem] xl:text-[8rem] break-words sm:leading-none overflow-hidden py-4 sm:pt-[4rem] border sm:border-none rounded-full sm:rounded-none hover:scale-95 sm:hover:scale-100'>
-               <a href='mailto:ashulohani97@outlook.com' className='sm:uppercase hover:underline'>
-                  ashulohani97@
+               <a href='mailto: ashutosh.lohani@outlook.in' className='sm:uppercase hover:underline'>
+                  {/* <a href='mailto:ashulohani97@outlook.com' className='sm:uppercase hover:underline'> */}
+                  {/* ashulohani97@ */}
+                  ashutosh.lohani
                   <br className='hidden sm:block' />
-                  outlook.com
+                  {/* outlook.com */}
+                  @outlook.in
                </a>
             </p>
             <p className='sm:hidden text-center text-[1rem] overflow-hidden mt-4 py-4 border rounded-full hover:scale-95'>

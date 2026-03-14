@@ -12,7 +12,7 @@ const About = () => {
             id='about'
             className='py-[5rem] lg:py-[10rem] flex flex-col-reverse sm:flex-row mx-6 sm:mx-14 lg:mx-28'>
             <div className='basis-1/2'>
-               <div className='text-[1.5rem] lg:text-[2rem] xl:text-[2.5rem]'>
+               <div className='text-[1.5rem] lg:text-[2rem] xl:text-[2.5rem] text-accent-secondary'>
                   {`ヽ(•‿•)`} <p className='waving-hand'>{`ﾉ`}</p>
                </div>
                <h1 className='text-[2.5rem] lg:text-5xl xl:text-[4.5rem] leading-tight xl:leading-[1.15] mt-4 mb-8 lg:my-8'>
@@ -29,7 +29,9 @@ const About = () => {
             <div className='flex basis-1/2 justify-center items-start'>
                <div className='flex justify-center mb-10 sm:mb-0 sm:p-8 lg:p-0 h-[15rem] sm:h-[100%] w-full sm:w-[100%] lg:w-[75%] xl:w-[65%]'>
                   <img
-                     loading='lazy'
+                     // rel="preload" as="image" href="/hero.webp" fetchpriority="high"
+                     loading="eager" fetchpriority="high" decoding="sync"
+                     // loading='lazy'
                      src={profilePicture}
                      alt='Ashutosh Lohani'
                      className='object-cover rounded-md max-h-full min-w-full brightness-90'
